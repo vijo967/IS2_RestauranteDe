@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50ABCDD6-3AAD-497E-BC91-CF3F670AFDA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurante_Delicias_del_mar</RootNamespace>
+    <AssemblyName>Restaurante Delicias del mar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\agregaringredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\agregaringredientes.Designer.cs">
+      <DependentUpon>agregaringredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\AgregarProducto.Designer.cs">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\altausuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\altausuario.Designer.cs">
+      <DependentUpon>altausuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\clientefrecuente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\clientefrecuente.Designer.cs">
+      <DependentUpon>clientefrecuente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\detalleproductoingrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\detalleproductoingrediente.Designer.cs">
+      <DependentUpon>detalleproductoingrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\eliminarproducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\eliminarproducto.Designer.cs">
+      <DependentUpon>eliminarproducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\eliminarusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\eliminarusuario.Designer.cs">
+      <DependentUpon>eliminarusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\inicio.Designer.cs">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\mesas.Designer.cs">
+      <DependentUpon>mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Orden.Designer.cs">
+      <DependentUpon>Orden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\productoEingredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\productoEingredientes.Designer.cs">
+      <DependentUpon>productoEingredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\tipoorden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tipoorden.Designer.cs">
+      <DependentUpon>tipoorden.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="vistas\agregaringredientes.resx">
+      <DependentUpon>agregaringredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\altausuario.resx">
+      <DependentUpon>altausuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\clientefrecuente.resx">
+      <DependentUpon>clientefrecuente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\detalleproductoingrediente.resx">
+      <DependentUpon>detalleproductoingrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\eliminarproducto.resx">
+      <DependentUpon>eliminarproducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\eliminarusuario.resx">
+      <DependentUpon>eliminarusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\inicio.resx">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\mesas.resx">
+      <DependentUpon>mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Orden.resx">
+      <DependentUpon>Orden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\productoEingredientes.resx">
+      <DependentUpon>productoEingredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tipoorden.resx">
+      <DependentUpon>tipoorden.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
